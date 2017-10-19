@@ -45,3 +45,5 @@ config :appsignal_api_example, AppsignalApiExample.Repo,
   database: "appsignal_api_example_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :appsignal, :config, active: true
