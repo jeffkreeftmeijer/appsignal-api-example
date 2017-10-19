@@ -7,5 +7,6 @@ defmodule AppsignalApiExampleWeb.Router do
 
   scope "/api", AppsignalApiExampleWeb do
     pipe_through :api
+    resources "/users", UserController, except: [:new, :edit]
   end
 end
